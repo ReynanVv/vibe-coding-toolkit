@@ -16,6 +16,8 @@
 
 [Cover behavior, decisions, failures, and regressions. State existing test environments and how to isolate services. Do not write tests that only repeat the code. Do not invent coverage, an E2E suite, or a security guarantee.]
 
+[For interactive UI, keep a proportional runtime matrix: identity/role, route, data state, viewport, and mutation state. Record which combinations actually ran. Include a narrow-mobile smoke for shared navigation/chrome and a runtime render of conditional branches touched by the diff. Static build/lint evidence is separate.]
+
 [For adopted capabilities, document runtime/browser preflight, comparable bundle measurements, SQL/migration checks, actual CI run evidence, security report range/coverage, UI interaction checks, and read-only Sentry evidence. Omit inapplicable checks with a reason. Installation and discovery alone do not prove these workflows ran.]
 
 [For typed lint, record the two focused async rules, severity, command, measured runner cost, and any legacy adoption plan. Run relevant harness smoke cases after instruction, memory, skill, or orchestration changes; identify the client/model and distinguish observed behavior from unrun cases.]
@@ -35,5 +37,7 @@ Finish when relevant findings are resolved or explicitly dispositioned, affected
 ## Dependencies and delivery
 
 Check full and production audits. Investigate advisories and record known risk and available fixes. Passing lint/build does not mean a clean audit.
+
+[When deployment is in scope, record the intended revision and the observed release state. Distinguish triggered/building/updating/live, verify the exact revision is live, inspect startup/migration logs when relevant, and record whether a live smoke was actually performed.]
 
 Checks are explicit commands. Git hooks, push blockers, and branch requirements are not defaults. Update this document together with scripts and rules that change.

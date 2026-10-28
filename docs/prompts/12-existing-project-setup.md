@@ -90,6 +90,8 @@ Incorporate durable working agreements:
 
 - Read instructions and relevant code before acting; distinguish observation, assumption, decision and evidence.
 - Define acceptance criteria and commands before implementing; test relevant behavior and failures. Fixes need reproduction and regression proof when feasible.
+- For interactive changes, build a proportional runtime matrix across affected role/profile, route, data state, viewport, and mutation state. Search all uses before removing shared imports/assets/routes/state keys; smoke-test conditional branches because compilation alone may not execute them.
+- Keep action acknowledgement proportional and renderer-independent when mobile migration is plausible: local pending state, contextual errors, and global success only when the effect is not self-evident.
 - Prefer verifiable invariants to lengthy recommendations: validate boundaries, inputs, contracts and rules with existing resources. Reuse scripts; create a small check only for a real gap, with a self-check/test if it contains new logic.
 - Expose local execution, diagnosis, secret-free logs and recovery procedures. Reuse existing observability; do not build a monitoring platform without a need.
 - Keep complex decisions and plans discoverable, with status, evidence, outstanding issues and the next action. Reuse templates/task-handoff.md.template for unfinished multi-session work when no equivalent exists. Resuming checks the actual checkout, files and processes before trusting the handoff.
@@ -159,6 +161,10 @@ Execute approved deliveries in order, with a reviewable diff and verification at
 Run relevant available checks, the copied rules' self-check and dependency audits. Separate production/development risks and incompatible fixes. Do not claim absolute security or remove protection to clear a report.
 
 Validate local operation: startup on a free port, the critical browser flow when UI exists, relevant errors, logs and changed contracts. Use test data and disposable/authorized services. Mocks, SQL generation, an embedded engine and a real database are different evidence. Stop only processes and temporary resources created by setup.
+
+For UI/routing changes, apply [runtime and delivery verification](../08-runtime-delivery-verification.md): exercise the affected roles/profiles and routes, at least one relevant empty/loading/error state, and shared navigation at a narrow mobile viewport when it changed. Check runtime console/network evidence where capability exists. A successful build is not evidence that every conditional render path executed.
+
+When deployment is part of the authorized task, record the intended revision and verify the platform reaches that exact revision in a live state. Treat queued/building/update-in-progress/live as distinct. Inspect startup or migration logs when the change depends on boot/schema behavior, and perform a focused live smoke when available and authorized.
 
 Verify the harness using docs/07-harness-evaluation.md and prompt 14 for relevant disposable behavioral cases. Record pass/fail/not run, client/model, and observed actions; do not mistake a fresh subagent for a restarted client. Find instructions, memory, and commands in a clean session when possible; discover a relevant skill; query Context7; observe RTK without duplicate execution; query the graph when applicable. Also check the diff, links and configuration syntax.
 

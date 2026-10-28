@@ -22,6 +22,17 @@ Align Node.js types with the runtime and tool peers; retain supported combinatio
 
 The [executable templates](../templates/next/) implement the server core. Use compatible stable versions checked at execution time; do not select `@beta`, `@rc`, `@canary`, or major versions merely because they are newer. Official documentation may show a prerelease example: check the registry channel before copying a command.
 
+### Runtime and delivery evidence
+
+For interactive applications, follow [runtime and delivery verification](08-runtime-delivery-verification.md). Static checks and runtime checks prove different things.
+
+- Define a proportional state matrix for affected roles/profiles, routes, data states, viewports, and mutation states.
+- Render conditional branches touched by the diff. Search all uses before removing a shared symbol or asset; permissive bundlers may build successfully while an unvisited branch still throws at runtime.
+- Shared mobile navigation must be checked against its actual item count and narrow-screen behavior after adding/removing entries.
+- Keep action feedback semantic and portable: pending on the control, contextual validation/errors, and non-duplicative success acknowledgement.
+- Enforce workflow replacements in backend contracts as well as UI controls so stale clients cannot bypass the new rule.
+- When deployment is authorized, verify the exact intended revision becomes live; “triggered,” “building,” and “updating” are not equivalent to “live.”
+
 ### Database and architecture
 
 - Drizzle is the default ORM for a new application with data. Another ORM or database needs a concrete product reason recorded in `PRODUCT.md` and `docs/architecture.md`.

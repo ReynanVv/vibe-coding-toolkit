@@ -10,11 +10,11 @@
 
 ## Interaction
 
-Use semantic HTML, keyboard navigation, visible focus, and adequate contrast. Label controls and fields. Place validation errors beside fields; asynchronous operations show progress and results. Respect reduced motion.
+Use semantic HTML, keyboard navigation, visible focus, and adequate contrast. Label controls and fields. Place validation errors beside fields. For asynchronous actions, keep pending state on the initiating control when possible; show global success only when the result is not already obvious, and avoid duplicate toast/banner feedback. Respect reduced motion.
 
 ## Layout and review
 
-[Actual breakpoints and reading criteria for mobile and desktop. List relevant empty, error, and loading states. Record completed interface reviews and what does not exist yet.]
+[Actual breakpoints and reading criteria for mobile and desktop. List relevant empty, error, and loading states. For shared navigation, verify the layout against the actual rendered item count and long labels; fixed bottom bars must not wrap, cover content, or lose safe-area spacing. Record completed interface reviews and what does not exist yet.]
 
 ## Maintenance
 

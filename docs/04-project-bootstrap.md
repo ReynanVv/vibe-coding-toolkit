@@ -189,11 +189,13 @@ For Next.js versions supporting `typegen`, generate route types before TypeScrip
 
 Run lint, types, self-check, tests, and build without real credentials. Run `db:generate` with a schema present and inspect SQL. With an authorized connection, test migrations and data flows against the database, distinguishing these from mocks or an embedded engine. Audit production and development separately; investigate advisories without forcing incompatible downgrades or claiming absolute security.
 
-Start the application on a free port, verify HTTP/page content, and stop only processes/resources created by setup. Check skill discovery in a new session when possible; disk presence is different evidence. Validate a real Context7 query.
+Start the application on a free port, verify HTTP/page content, and stop only processes/resources created by setup. For interactive UI, use [runtime and delivery verification](08-runtime-delivery-verification.md): render affected conditional branches, exercise relevant role/route/data-state combinations, and check shared navigation at narrow mobile and desktop sizes. Check skill discovery in a new session when possible; disk presence is different evidence. Validate a real Context7 query.
 
 Verify instruction/command discovery and memory retrieval using [harness evaluation](07-harness-evaluation.md). Run relevant disposable behavior cases for materially changed instructions, memory, or orchestration. Record observed actions, client/model, and pass/fail/not run; a fresh subagent context does not prove client restart behavior. Scope review to risk, verify fixes, and record coverage and residual risks without requiring an arbitrary number of rounds.
 
-For selected capabilities, also record the Next.js runtime preflight and affected browser flow, analyzer support/audit evidence, PostgreSQL checks, read-only CI/Sentry queries, and the security report or component checks that actually ran. Keep unavailable account-dependent checks pending. A successful build does not prove any remote integration works.
+For selected capabilities, also record the Next.js runtime preflight and affected browser flow, analyzer support/audit evidence, PostgreSQL checks, read-only CI/Sentry queries, and the security report or component checks that actually ran. Keep unavailable account-dependent checks pending. A successful build does not prove any remote integration works or that every conditional UI branch renders.
+
+When deployment is authorized, distinguish committed, CI-passed, deploy-triggered, build-complete, rollout-in-progress, exact-revision-live, and live-smoke-verified evidence. Do not report the application as live until the hosting platform confirms the intended revision.
 
 Generate the initial deterministic graph with:
 

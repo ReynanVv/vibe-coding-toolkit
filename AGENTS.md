@@ -5,7 +5,7 @@ This repository distributes documentation, prompts, and templates. It is not a N
 ## Scope and sources
 
 - Preserve the entry points: machine setup, project bootstrap, and tool-specific adoption.
-- Recipe: `docs/04-project-bootstrap.md`; defaults: `docs/06-project-defaults.md`; entry point: `docs/prompts/11-next-project-bootstrap.md`.
+- Recipe: `docs/04-project-bootstrap.md`; defaults: `docs/06-project-defaults.md`; runtime/delivery evidence: `docs/08-runtime-delivery-verification.md`; entry point: `docs/prompts/11-next-project-bootstrap.md`.
 - Catalog: `docs/tools/16-vercel-skills.md`. Use the `name` from `SKILL.md`, rather than inferring it from the directory name.
 - Generated documents: `templates/project-docs/manifest.json`, with four root files and five files in `docs/`. Product destination: `PRODUCT.md`; preserve the historical URL `templates/product.md.template`.
 - Portable instructions: `templates/AGENTS.md.template`; the Claude template imports that file.
@@ -17,6 +17,8 @@ This repository distributes documentation, prompts, and templates. It is not a N
 - Reuse templates and rules. Do not add an application, custom generator, or product dependencies at the root.
 - Keep public paths in English; update links, anchors, indexes, recipes, and examples together when their contracts change.
 - Validate executable templates in a temporary project; check local links, configuration syntax, and `git diff --check`.
+- For interactive changes, distinguish static checks from runtime evidence. Exercise affected roles/routes/states, responsive navigation, and conditional branches; a passing build alone is not proof that every UI path renders.
+- When deployment is in scope, distinguish triggered/building/updating/live states and verify the exact intended revision before calling it deployed. Inspect startup/migration logs when relevant.
 - Validator regression tests: `node --test scripts/validate-docs.test.mjs`. Links, anchors, manifest, and JSON: `node scripts/validate-docs.mjs`.
 - Reproducible baseline validation: `node scripts/validate-next.mjs` with Node.js 24, npm, and network access. It creates and removes the temporary project; dependencies stay outside the root.
 - Rule self-check: `node templates/eslint/verify.mjs templates/eslint/eslint-rules/index.cjs`, in an environment with ESLint available.

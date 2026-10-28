@@ -234,7 +234,7 @@ The toolkit distinguishes **file present**, **configuration complete**, and **in
 |---|---|---|
 | **Structure and boundaries** | Framework presets, local rules, a 350-line limit, and imports adapted to the codebase | [ESLint and quality gates](docs/tools/06-eslint-biome-quality-gates.md) |
 | **Behavior** | Types, relevant tests, regressions, error handling, and build | [Project defaults](docs/06-project-defaults.md) |
-| **Interface in use** | Local navigation, keyboard, focus, states, console, networking, and performance where relevant | [agent-browser](docs/tools/11-agent-browser.md) · [Chrome DevTools MCP](docs/tools/14-chrome-devtools-mcp.md) |
+| **Interface in use** | Role/route runtime smoke, responsive navigation, action feedback, console/network, keyboard and focus | [Runtime and delivery verification](docs/08-runtime-delivery-verification.md) · [agent-browser](docs/tools/11-agent-browser.md) · [Chrome DevTools MCP](docs/tools/14-chrome-devtools-mcp.md) |
 | **Agent integrations** | Actual skill discovery, Context7 queries, RTK without duplication, and a relevant graph | [Existing-project setup](docs/prompts/12-existing-project-setup.md) |
 | **Harness behavior** | Disposable tasks for authorization fixes, stale handoffs, read-only review, and observable recovery | [Harness evaluation](docs/07-harness-evaluation.md) |
 | **The toolkit itself** | Links, anchors, manifest, JSON, and a Next.js foundation in a temporary project | [Reproducible validation](docs/05-toolkit-validation.md) |
@@ -341,6 +341,7 @@ vibe-coding-toolkit/
 | [Existing project](docs/prompts/12-existing-project-setup.md) | Complete adoption, updates, and harness |
 | [Toolkit validation](docs/05-toolkit-validation.md) | What was verified and what limits remain |
 | [Project defaults](docs/06-project-defaults.md) | Stack, documentation, and adaptation criteria |
+| [Runtime and delivery verification](docs/08-runtime-delivery-verification.md) | Role/route smoke tests, responsive UI, acknowledgement, and exact-revision delivery evidence |
 
 ### Tools
 

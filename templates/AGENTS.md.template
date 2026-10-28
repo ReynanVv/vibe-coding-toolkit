@@ -28,6 +28,9 @@ Use actual commands; mark unavailable checks without inventing scripts.
 - Preserve local changes, validation, error handling, security, accessibility, and explicit requirements.
 - Do not create abstractions, architecture, options, dependencies, or features for unrequested needs.
 - Run appropriate checks. Test relevant logic and regressions; trivial changes do not need tests that merely mirror the implementation.
+- For interactive changes, verify affected roles/profiles, routes, data states, and responsive breakpoints at runtime when capability exists. A build that never renders a conditional branch does not prove that branch works.
+- Before removing or renaming a shared import, asset, route, state key, component, or CSS selector, search all call sites and smoke-test affected conditional paths.
+- Keep asynchronous action acknowledgement proportional: pending state on the initiating control, contextual validation/errors, and global success only when the result is not already obvious.
 - Do not turn assumptions into facts or pending integrations into simulated results.
 - Continue authorized work. Ask only for essential information or actions outside the authorization.
 - Publishing, messaging third parties, costs, and destructive actions require relevant authorization. Installing tools does not grant it.
@@ -41,6 +44,14 @@ Use actual commands; mark unavailable checks without inventing scripts.
 - When resuming from a handoff, check actual files, Git state, checks, and processes. Claim background execution only when an active process, agent, or automation can be verified.
 - For unfinished multi-session work, keep a short handoff in the existing plan/task record: objective, verified state, checks, pending work, blockers, owned resources, and next action. Do not turn temporary progress into permanent memory.
 - Without a safe alternative, report the blocker, completed work, and what is needed to resume; do not present pending work as results or promise automatic continuation.
+
+## Runtime and delivery verification
+
+- Maintain a small verification matrix for affected identity/role, route, data state, viewport, and mutation state. Test changed combinations plus one adjacent high-risk path; do not attempt every Cartesian combination.
+- Responsive navigation must match the actual rendered item count. Check narrow mobile and desktop after adding/removing shared navigation entries, labels, badges, or fixed bars.
+- Workflow replacements are enforced by the backend as well as the UI. Old clients must not retain a bypass; preserve compatible history/data unless deletion is explicitly required.
+- Treat committed, CI-passed, deployment-triggered, build-complete, rollout-in-progress, exact-revision-live, and live-smoke-verified as different states. Do not collapse them into “deployed.”
+- Record runtime/browser and deployment evidence in `docs/quality.md` when the project has a UI or deployment workflow.
 
 ## Standards and documentation
 

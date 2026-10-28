@@ -236,7 +236,7 @@ El toolkit distingue entre **archivo presente**, **configuración completa** e *
 |---|---|---|
 | **Estructura y límites** | Presets del framework, reglas locales, límite de 350 líneas e importaciones adaptadas a la base de código | [ESLint y controles de calidad](docs/tools/06-eslint-biome-quality-gates.md) |
 | **Comportamiento** | Tipos, pruebas pertinentes, regresiones, manejo de errores y build | [Valores predeterminados del proyecto](docs/06-project-defaults.md) |
-| **Interfaz en uso** | Navegación local, teclado, foco, estados, consola, red y rendimiento cuando corresponda | [agent-browser](docs/tools/11-agent-browser.md) · [Chrome DevTools MCP](docs/tools/14-chrome-devtools-mcp.md) |
+| **Interfaz en uso** | Smoke por perfil/ruta, navegación responsive, feedback de acciones, consola/red, teclado y foco | [Verificación de runtime y entrega](docs/08-runtime-delivery-verification.md) · [agent-browser](docs/tools/11-agent-browser.md) · [Chrome DevTools MCP](docs/tools/14-chrome-devtools-mcp.md) |
 | **Integraciones del agente** | Descubrimiento real de skills, consultas a Context7, RTK sin duplicación y un grafo pertinente | [Configuración de un proyecto existente](docs/prompts/12-existing-project-setup.md) |
 | **Comportamiento del harness** | Tareas desechables para autorización, traspasos obsoletos, revisión sin cambios y recuperación observable | [Evaluación del harness](docs/07-harness-evaluation.md) |
 | **El propio toolkit** | Enlaces, anclas, manifiesto, JSON y una base Next.js en un proyecto temporal | [Validación reproducible](docs/05-toolkit-validation.md) |
@@ -343,6 +343,7 @@ vibe-coding-toolkit/
 | [Proyecto existente](docs/prompts/12-existing-project-setup.md) | Adopción completa, actualizaciones y harness |
 | [Validación del toolkit](docs/05-toolkit-validation.md) | Qué se verificó y qué límites permanecen |
 | [Valores predeterminados del proyecto](docs/06-project-defaults.md) | Stack, documentación y criterios de adaptación |
+| [Verificación de runtime y entrega](docs/08-runtime-delivery-verification.md) | Smoke por perfil/ruta, UI responsive, acknowledgements y evidencia de la revisión exacta desplegada |
 
 ### Herramientas
 

@@ -236,7 +236,7 @@ O toolkit separa **arquivo presente**, **configuração concluída** e **integra
 |---|---|---|
 | **Estrutura e fronteiras** | Presets do framework, regras locais, teto de 350 linhas e imports ajustados à base | [ESLint e quality gates](docs/tools/06-eslint-biome-quality-gates.md) |
 | **Comportamento** | Tipos, testes relevantes, regressões, tratamento de erros e build | [Padrões do projeto](docs/06-project-defaults.md) |
-| **Interface em uso** | Navegação local, teclado, foco, estados, console, rede e desempenho quando pertinente | [agent-browser](docs/tools/11-agent-browser.md) · [Chrome DevTools MCP](docs/tools/14-chrome-devtools-mcp.md) |
+| **Interface em uso** | Smoke de perfil/rota, navegação responsiva, feedback de ações, console/rede, teclado e foco | [Verificação de runtime e entrega](docs/08-runtime-delivery-verification.md) · [agent-browser](docs/tools/11-agent-browser.md) · [Chrome DevTools MCP](docs/tools/14-chrome-devtools-mcp.md) |
 | **Integrações do agente** | Descoberta real de skills, consulta ao Context7, RTK sem duplicação e grafo pertinente | [Setup de projeto existente](docs/prompts/12-existing-project-setup.md) |
 | **Comportamento do harness** | Tarefas descartáveis para autorização, handoff desatualizado, revisão sem alterações e recuperação observável | [Avaliação do harness](docs/07-harness-evaluation.md) |
 | **O próprio toolkit** | Links, âncoras, manifesto, JSON e base Next em projeto temporário | [Validação reproduzível](docs/05-toolkit-validation.md) |
@@ -343,6 +343,7 @@ vibe-coding-toolkit/
 | [Projeto existente](docs/prompts/12-existing-project-setup.md) | Adoção completa, atualização e harness |
 | [Validação do toolkit](docs/05-toolkit-validation.md) | O que foi comprovado e quais limites permanecem |
 | [Padrões do projeto](docs/06-project-defaults.md) | Stack, documentação e critérios de adaptação |
+| [Verificação de runtime e entrega](docs/08-runtime-delivery-verification.md) | Smoke por perfil/rota, UI responsiva, acknowledgements e evidência da revisão exata em produção |
 
 ### Ferramentas
 
